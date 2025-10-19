@@ -1,0 +1,18 @@
+#Palindrome checker
+#Conditions checking weather a number is palindrome or not 
+
+no = int(input("Enter Number"))
+rev = 0
+num = no
+while no > 0:
+    dig = no % 10
+    rev = rev * 10 + dig
+    no = no // 10
+    
+print(rev)
+
+if num == rev:
+    print("Palindrome number")
+else :
+    print("Not a Palindrome number")
+    
